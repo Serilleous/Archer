@@ -14,26 +14,22 @@ AArcherCharacter::AArcherCharacter(const FObjectInitializer& ObjectInitializer)
 	//SpringArm.AttachParent(this->GetCapsuleComponent());
 
 	ThirdPersonCamera = ObjectInitializer.CreateDefaultSubobject<UCameraComponent>(this, FName("ThirdPersonCamera"));
-	//9ThirdPersonCamera->AttachParent(SpringArm);
-	//ThirdPersonCamera->coordi
+	ThirdPersonCamera->AttachParent = SpringArm;
 
 }
 
-// Called when the game starts or when spawned
 void AArcherCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
 }
 
-// Called every frame
 void AArcherCharacter::Tick( float DeltaTime )
 {
 	Super::Tick( DeltaTime );
 
 }
 
-// Called to bind functionality to input
 void AArcherCharacter::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
 	Super::SetupPlayerInputComponent(InputComponent);

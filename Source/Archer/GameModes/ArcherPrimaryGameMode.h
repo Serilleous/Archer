@@ -3,13 +3,13 @@
 #pragma once
 
 #include "GameFramework/GameMode.h"
-#include "ArcherGameMode.generated.h"
+#include "ArcherPrimaryGameMode.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class ARCHER_API AArcherGameMode : public AGameMode
+class ARCHER_API AArcherPrimaryGameMode : public AGameMode
 {
 	GENERATED_BODY()
 	
